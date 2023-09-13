@@ -1,5 +1,6 @@
 <template>
-  <v-container class="fill-height">
+  <h1>This is hello component</h1>
+  <!-- <v-container class="fill-height">
     <v-responsive class="align-center text-center fill-height">
       <v-img height="300" src="@/assets/logo.svg" />
 
@@ -67,9 +68,15 @@
         </v-col>
       </v-row>
     </v-responsive>
-  </v-container>
+  </v-container> -->
 </template>
 
 <script setup>
   //
 </script>
+
+<style scoped>
+h1{
+  border: solid;
+}
+</style>
