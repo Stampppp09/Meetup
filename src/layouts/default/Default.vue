@@ -1,9 +1,9 @@
 <template>
-  <v-app>
+  <v-layout>
     <default-bar />
 
     <default-view />
-  </v-app>
+  </v-layout>
 </template>
 
 <script setup>

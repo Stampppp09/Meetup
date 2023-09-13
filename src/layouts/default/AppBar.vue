@@ -8,14 +8,14 @@
   </v-app-bar> -->
 
  
-  <v-card>
-    <v-layout>
+  <!-- <v-card> -->
+    <!-- <v-layout> -->
       <!-- <v-system-bar color="deep-purple darken-3"></v-system-bar> -->
 
       <v-app-bar
-        color="primary"
+        color="blue-darken-2"
         prominent
-        image="https://picsum.photos/350/165?random"
+        
         >
         <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
@@ -28,6 +28,7 @@
         :key="item.title"
         router
         :to="item.link">
+        <v-icon left dark>{{ item.icon }}</v-icon>
         {{item.title}}
       </v-btn>
 
@@ -53,16 +54,16 @@
         router 
         :to="item.link"
         >
-        {{ item.title }}
+        <v-icon>{{ item.icon }}</v-icon>{{ item.title }}
       </v-list-item>
       </v-list>
       </v-navigation-drawer>
 
-      <v-main style="height: 500px;">
+      <!-- <v-main style="height: 500px;">
       
-      </v-main>
-    </v-layout>
-  </v-card>
+      </v-main> -->
+    <!-- </v-layout> -->
+  <!-- </v-card> -->
 </template>
 
 
@@ -75,30 +76,36 @@
         {
           title: 'View Meetups',
           value: 'view meetups',
-          link: '/viewmeetups'
+          link: '/viewmeetups',
+          icon: 'mdi-account-supervisor'
+
         },
         {
           title: 'Organize Meetups',
           value: 'organize meetups',
-          link: '/organizemeetups'
+          link: '/organizemeetups' ,
+          icon: 'mdi-map-marker'
 
         },
         {
           title: 'Profile',
           value: 'profile',
-          link: '/profile'
+          link: '/profile',
+          icon: 'mdi-account'
 
         },
         {
           title: 'Sign Up',
           value: 'sign up',
-          link: '/signup'
+          link: '/signup',
+          icon: 'mdi-face-man'
 
         },
         {
           title: 'Sign In',
           value: 'sign in',
-          link: '/signin'
+          link: '/signin',
+          icon: 'mdi-login'
 
         },
       ],
