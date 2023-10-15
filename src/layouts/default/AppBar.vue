@@ -19,7 +19,10 @@
         >
         <v-app-bar-nav-icon variant="text" @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
-        <v-toolbar-title>Test</v-toolbar-title>
+        <v-toolbar-title>
+          <router-link to="/" tag="span" style="cursor: pointer">Badminton Meetup</router-link>
+          
+        </v-toolbar-title>
 
         <v-spacer></v-spacer>
         <v-btn 
